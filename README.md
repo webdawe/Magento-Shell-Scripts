@@ -1,6 +1,6 @@
-# Magento-Shell-Scripts
+# Magento Shell Scripts
 
-Update Product Attribute from a CSV file
+1) Update Product Attribute from a CSV file
 
 Usage 
  php updateProductAttribute.php -- [options]<br>
