@@ -184,7 +184,7 @@ class updateCategoryAttribute extends Mage_Shell_Abstract
      		return '
 			Usage:  php updateCategoryAttribute.php -- [options]
 			 -- storeId <store ID> : Store ID
-			 -- fileName <filename.csv> : CSV file
+			 -- file <filename.csv> : CSV file
 			';
     }
 
