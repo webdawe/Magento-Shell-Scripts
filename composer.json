@@ -1,0 +1,16 @@
+{
+    "name":"webdawe/magento-shell-scripts",
+    "type":"magento-module",
+    "license":"OSL-3.0",
+    "homepage":"https://github.com/webdawe/magento-shell-scripts",
+    "description":"useful magento shell scripts repository.",
+    "authors":[
+        {
+            "name":"Anil Paul",
+            "email":"webdeveloper363@gmail.com"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
