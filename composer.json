@@ -4,6 +4,7 @@
     "license":"OSL-3.0",
     "homepage":"https://github.com/webdawe/magento-shell-scripts",
     "description":"Useful Magento Shell Scripts",
+    "minimum-stability":"stable",
     "authors":[
         {
             "name":"Anil Paul",
