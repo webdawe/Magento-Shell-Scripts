@@ -5,7 +5,7 @@
     "homepage":"https://github.com/webdawe/magento-shell-scripts",
     "description":"useful magento shell scripts repository.",
 	"minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
     "authors":[
         {
             "name":"Anil Paul",
