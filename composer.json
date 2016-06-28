@@ -10,8 +10,5 @@
             "name":"Anil Paul",
             "email":"webdeveloper363@gmail.com"
         }
-    ],
-    "require":{
-        "magento-hackathon/magento-composer-installer":"*"
-    }
+    ]
 }
