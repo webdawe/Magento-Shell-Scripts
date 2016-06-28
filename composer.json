@@ -4,12 +4,14 @@
     "license":"OSL-3.0",
     "homepage":"https://github.com/webdawe/magento-shell-scripts",
     "description":"useful magento shell scripts repository.",
-	"minimum-stability": "dev",
-    "prefer-stable": true,
     "authors":[
         {
             "name":"Anil Paul",
             "email":"webdeveloper363@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    }
 }
