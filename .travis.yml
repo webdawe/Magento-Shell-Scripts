@@ -1,10 +1,37 @@
 language: php
+
+# list any PHP version you want to test against
 php:
+  # using major version aliases
+
+  # aliased to 5.2.17
+  - 5.2
+  # aliased to 5.3.29
   - 5.3
+  # aliased to a recent 5.4.x version
   - 5.4
-env:
-  - MAGE=1.9.0.1
-  - MAGE=1.8.1.0
-  - MAGE=1.7.0.2
-  - MAGE=1.6.2.0
-  - MAGE=1.5.1.0
+  # aliased to a recent 5.5.x version
+  - 5.5
+  # aliased to a recent 5.6.x version
+  - 5.6
+  # aliased to a recent 7.x version
+  - 7.0
+  # aliased to a recent hhvm version
+  - hhvm
+
+# optionally set up exclutions and allowed failures in the matrix
+matrix:
+  exclude:
+    - php: hhvm
+      env: DB=pgsql  # PDO driver for pgsql is unsupported by HHVM (3rd party install for support)
+  allow_failures:
+    - php: 7.0
+    - php: hhvm
+
+# execute any number of scripts before the test run, custom env's are available as variables
+before_script:
+  - mysql -e "create database IF NOT EXISTS magento;" -uroot; fi
+
+# omitting "script:" will default to phpunit
+# use the $DB env variable to determine the phpunit.xml to use
+script: phpunit --configuration build.xml --coverage-text
